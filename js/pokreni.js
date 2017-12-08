@@ -1,1 +1,2 @@
-$("#zoom_01").elevateZoom();
+
+$(window).load(function() { $("#zoom_01").elevateZoom();});
