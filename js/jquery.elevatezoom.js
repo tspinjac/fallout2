@@ -23,7 +23,7 @@
  *	http://en.wikipedia.org/wiki/MIT_License
  *	http://en.wikipedia.org/wiki/GNU_General_Public_License
  */
-$(document).ready(function(){
+
 
 if ( typeof Object.create !== 'function' ) {
 	Object.create = function( obj ) {
@@ -1788,5 +1788,3 @@ if ( typeof Object.create !== 'function' ) {
 	};
 
 })( jQuery, window, document );
-
-};
