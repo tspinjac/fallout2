@@ -202,12 +202,24 @@
   <script src="js/jquery-3.2.1.js" ></script>  
   <script src="js/galerija.js"></script>
   <script src="js/scroll.js" ></script>
-  <script src="js/jquery.elevatezoom.js" ></script>  
+  <!--<script src="js/jquery.elevatezoom.js" ></script>  
   <script src="js/zoomiraj.js" ></script>
+ --> 
+  <script>
+    
+    $(document).ready(function() {
+
+      var tag = document.createElement("script");
+      tag.src = "js/jquery.elevatezoom.js";
+      document.getElementsByTagName("head")[0].appendChild(tag);
+      
+      var tag2 = document.createElement("script");
+      tag2.src = "js/zoomiraj.js";
+      document.getElementsByTagName("head")[0].appendChild(tag2);
+
   
-  <script>$(window).on('load', function() {
-  alert('window on load')
-})</script>
+});
+  </script>
 
 </body>
 </html>
