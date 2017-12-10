@@ -1,6 +1,7 @@
 /* 
 CSS za projekt "Fallout 2 tribute page" - Multimedijski sustavi 
-v 1.X    studeni 2017.
+v 1.0   studeni 2017.
+v 2.0	prosinac 2017.	
 */
 
 body {
@@ -219,13 +220,13 @@ body > main > footer > a {padding:5px;}
 /*Mediaquery za menu*/
 @media only screen and (max-width: 386px) {
     #pomocna { margin-bottom:140px;}
-    figure {display:block; margin: 0 auto;}
-}
+    
 
 
 /*Fix za Interplay gif na vrhu*/
 @media only screen and (max-width: 400px) {
-   
+   figure {display:block; margin: 0 auto; position:relative; z-index: -1;}
+}
 }
 
 /* Media za floatbox..bez floata, da idu jedan ispod drugoga*/
