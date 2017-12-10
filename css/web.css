@@ -218,15 +218,14 @@ body > main > footer > a {padding:5px;}
 
 /*Mediaquery za menu*/
 @media only screen and (max-width: 386px) {
-    #pomocna {
-        margin-bottom:140px;
-    }
+    #pomocna { margin-bottom:140px;}
+    figure {display:block; margin: 0 auto;}
 }
 
 
 /*Fix za Interplay gif na vrhu*/
 @media only screen and (max-width: 400px) {
-   figure {float:none;}
+   
 }
 
 /* Media za floatbox..bez floata, da idu jedan ispod drugoga*/
