@@ -18,7 +18,7 @@ header {
 	position: relative;
 	height: 250px;
 	max-width: 900px;
-	background-image: url("../img/jpg/Header_logo.png");
+	background-image: url("../img/jpg/Header_logo2.png");
 	background-repeat: no-repeat;
     background-size: cover;
     margin:0 auto;
@@ -231,8 +231,9 @@ body > main > footer > a {padding:5px;}
 
 /* Media za floatbox..bez floata, da idu jedan ispod drugoga*/
 @media only screen and (max-width: 520px) {
-    .floatBox article { text-align: center; height:400px; font-size:1.4em;width:calc(100% - 14px); border:2px solid white; min-height: 150px;}
-	.floatBox article p {margin-top:-15px;}
+    .floatBox article { text-align: center; height:300px; font-size:1.3em; width:calc(100% - 14px); border:2px solid white; min-height: 150px;}
+	.floatBox article p { font-size: 1.2em; color: lime; margin-top:-10px;}
+
 
 }
 
