@@ -136,6 +136,7 @@ footer ul {margin:0; padding:0; width:100%;list-style: none; margin-bottom:20px;
 footer ul li { display:inline-block; width:100px; /*IE7*/}
 footer ul li a { color: lime;}
 body > main > footer > a {padding:5px;}
+body > main > footer > p:nth-child(4) > a {color:yellow;}
 
 
 /* GALERIJA - preuzeto sa https://codepen.io/phileflanagan/pen/QgPdwz, prilagođeno*/
@@ -220,13 +221,13 @@ body > main > footer > a {padding:5px;}
 /*Mediaquery za menu*/
 @media only screen and (max-width: 386px) {
     #pomocna { margin-bottom:140px;}
+    #pomocna::after { content: ""; display: table; clear: both;/*fix za galeriju...slicice se ne prikazuju ispod 386px */
     
-
+}
 
 /*Fix za Interplay gif na vrhu*/
-@media only screen and (max-width: 400px) {
-   figure {display:block; margin: 0 auto; position:relative; z-index: -1;}
-}
+@media only screen and  (max-width: 400px) {
+figure {display:block; margin: 0 auto; position:relative; z-index: -1;}
 }
 
 /* Media za floatbox..bez floata, da idu jedan ispod drugoga*/
