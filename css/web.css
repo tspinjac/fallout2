@@ -30,7 +30,8 @@ header {
 }
 header h1 { float:right; margin:20px; color: white;} 
 header p {  margin-left:20%; font-size: 1.5em;color: lime;}
-figure {float:right;}
+.Interplay {float:right; position:relative; z-index: -1;  margin-left:10px; }
+
 
 
 
@@ -54,7 +55,9 @@ span.blink {animation: blink 1s infinite;}
 em { }
 
 
-#aiming, #car, #skills {display: block;
+
+#aiming, #car, #skills {
+	display: block;
     float: none;
     margin: 0 auto;
     width:320px;
@@ -104,7 +107,7 @@ body > main > section.floatBox > h2 > a {color:yellow;}
 .floatBox article a h1 {}
 .floatBox article a p {}
 body > main > section.floatBox > article > a > img {padding:10px; box-sizing:border-box; transition: all .5s ease-in-out;}
-body > main > section.floatBox > article > a > img:hover {transform: scale(1.05);}
+body > main > section.floatBox > article > a > img:hover {transform: scale(1.1);}
 
 /* MAPA - to do*/
 #mapa {margin-top: 50px; border-top:3px solid white;}
@@ -219,25 +222,17 @@ body > main > footer > p:nth-child(4) > a {color:yellow;}
 
 
 /*Mediaquery za menu*/
-@media only screen and (max-width: 386px) {
+@media screen and (max-width: 386px) {
     #pomocna { margin-bottom:140px;}
-    #pomocna::after { content: ""; display: table; clear: both;/*fix za galeriju...slicice se ne prikazuju ispod 386px */
     
 }
 
-/*Fix za Interplay gif na vrhu*/
-@media only screen and  (max-width: 400px) {
-figure {display:block; margin: 0 auto; position:relative; z-index: -1;}
-}
 
-/* Media za floatbox..bez floata, da idu jedan ispod drugoga*/
-@media only screen and (max-width: 520px) {
-    .floatBox article { text-align: center; height:300px; font-size:1.3em; width:calc(100% - 14px); border:2px solid white; min-height: 150px;}
+/* Media za floatbox..<580px:    float:none;*/
+@media screen and (max-width: 580px){
+  	.floatBox article {float:none; text-align: center; height:300px; font-size:1.3em; width:calc(100% - 14px); border:2px solid white; min-height: 150px;}
 	.floatBox article p { font-size: 1.2em; color: lime; margin-top:-10px;}
 
-
 }
-
-
 
 
