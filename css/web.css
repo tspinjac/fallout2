@@ -212,7 +212,7 @@ body > main > footer > p:nth-child(4) > a {color:yellow;}
 	display: inline-block;
 	width: 50%;
 	border: none;
-  color: #ccc;
+ 	color: #ccc;
 	background-color: transparent;
 	padding: 0.2em 1.5em;
 }
@@ -234,5 +234,3 @@ body > main > footer > p:nth-child(4) > a {color:yellow;}
 	.floatBox article p { font-size: 1.2em; color: lime; margin-top:-10px;}
 
 }
-
-
