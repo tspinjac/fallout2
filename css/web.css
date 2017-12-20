@@ -32,9 +32,6 @@ header h1 { float:right; margin:20px; color: white;}
 header p {  margin-left:20%; font-size: 1.5em;color: lime;}
 .Interplay {float:right; position:relative; z-index: -1;  margin-left:10px; }
 
-
-
-
 /* NAV */
 #pomocna {width: 100%;  height: 50px; margin-top:20px; margin-bottom:40px;}
 #pomocna > ul {min-width:360px; opacity:0.8; margin:0; padding: 0; max-width:100%; text-align: center}
@@ -44,17 +41,16 @@ header p {  margin-left:20%; font-size: 1.5em;color: lime;}
  background-repeat: no-repeat;
  background-position: center center;
 }
-#pomocna li a {text-decoration: none; position: absolute; top:6px; left:50px;color:lime; font-size: 1.2em; }
 #pomocna > ul li:hover {opacity:1; transform: scale(1.3); }
+#pomocna li a {text-decoration: none; position: absolute; top:6px; left:50px;color:lime; font-size: 1.2em; }
 
-
-
-/* Main content*/
+/* Main content, neki tweekovi */
 span.blink {animation: blink 1s infinite;}
 @keyframes blink{to{opacity: .0;}}
-em { }
 
-
+/* Embeded video */
+#video {text-align: center;}
+iframe {max-width: 100%;}
 
 #aiming, #car, #skills {
 	display: block;
@@ -91,8 +87,6 @@ main .articles .drugi img, main .articles .cetvrti img {width:120px; height: 120
 .gallery article img:hover {transform: scale(1.5);}
 body > main > div.container > h2 > a {color:yellow;}
 
-
-
 /*  Floatbox 
 /* opcije: 1) clearfif; 2) clear:both u block elementu ispod floatanih (npr. dodas br sa clear both); 3) overflow:auto za parent element!  clearfix za gallery, nešto bolje rješenje od običnog clear:both ; clear:both can be applied to any block-level element!
 */
@@ -103,18 +97,14 @@ body > main > div.container > h2 > a {color:yellow;}
 body > main > section.floatBox > h2 > a {color:yellow;}
 .floatBox article a {color:lime;}
 .floatBox article img {display:inline-block;max-width: 100%;}
-.floatBox article a img {}
-.floatBox article a h1 {}
-.floatBox article a p {}
 body > main > section.floatBox > article > a > img {padding:10px; box-sizing:border-box; transition: all .5s ease-in-out;}
 body > main > section.floatBox > article > a > img:hover {transform: scale(1.1);}
 
-/* MAPA - to do*/
+/* MAPA - to do */
 #mapa {margin-top: 50px; border-top:3px solid white;}
 #mapa h2 {color:lime; font-size: 1.3em; text-align: center;}
 #mapa > h2 > a {color:yellow;}
 #mapa .mapa img { max-width: 100%; display:block; margin:0 auto; border:2px solid lime;border-radius: 10px; }
-
 
 /*ASIDE*/
 .pquote {	float:left; max-width: 400px; color: lime;	font-size: 1.5em; line-height: 0.9;	padding: 5px;
@@ -128,18 +118,12 @@ blockquote { margin: 0;}
 blockquote a {color:yellow;}
 .pquote p:first-letter {font-size: 39px;font-weight: bold;}
 
-/* Embeded video */
-#video {text-align: center;}
-iframe {max-width: 100%;}
-
 /* FOOTER */
 footer { padding-top:40px;background-image: url("../img/jpg/footer_bg.jpg");background-repeat:no-repeat; background-size:cover; margin-top:20px;  text-align: center; margin-bottom: 50px; border-radius: 10px; color: lime; font-size: 1em;}
-body > main > footer > ul > li a, body > main > footer {color:white; text-transform: uppercase;}
-footer ul {margin:0; padding:0; width:100%;list-style: none; margin-bottom:20px;  }
-footer ul li { display:inline-block; width:100px; /*IE7*/}
-footer ul li a { color: lime;}
-body > main > footer > a {padding:5px;}
-body > main > footer > p:nth-child(4) > a {color:yellow;}
+footer {color:white; text-transform: uppercase;}
+body > footer > p:nth-child(4) { float:left; transition: all .5s ease-in-out;}
+body > footer > p:nth-child(4):hover {transform: scale(1.2);}
+body > footer > p:nth-child(4) a {color:yellow; }
 
 
 /* GALERIJA - preuzeto sa https://codepen.io/phileflanagan/pen/QgPdwz, prilagođeno*/
@@ -153,7 +137,6 @@ body > main > footer > p:nth-child(4) > a {color:yellow;}
     border-radius: 10px;
     padding: 2px;
 }
-
 
 /* Useful Classes */
 .xy-center {
@@ -199,7 +182,6 @@ body > main > footer > p:nth-child(4) > a {color:yellow;}
     background-color: white;
 }
 
-
 .gallery-item { opacity: 0.5; }
 .gallery-item.active { opacity: 1; }
 
@@ -219,18 +201,18 @@ body > main > footer > p:nth-child(4) > a {color:yellow;}
 .move-btn:first-child {border-right: none;}
 .move-btn.left  { cursor: w-resize; }
 .move-btn.right { cursor: e-resize; }
+/* KRAJ GALERIJE*/
 
+
+/**** MEDIAQUERIES ****/
 
 /*Mediaquery za menu*/
 @media screen and (max-width: 386px) {
     #pomocna { margin-bottom:140px;}
-    
-}
-
+    }
 
 /* Media za floatbox..<580px:    float:none;*/
 @media screen and (max-width: 580px){
   	.floatBox article {float:none; text-align: center; height:300px; font-size:1.3em; width:calc(100% - 14px); border:2px solid white; min-height: 150px;}
 	.floatBox article p { font-size: 1.2em; color: lime; margin-top:-10px;}
-
 }
