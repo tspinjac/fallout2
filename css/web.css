@@ -49,6 +49,9 @@ header p {  margin-left:20%; font-size: 1.5em;color: lime;}
 /* Main content, neki tweekovi */
 span.blink {animation: blink 1s infinite;}
 @keyframes blink{to{opacity: .0;}}
+/* GALLERY */
+ /* opcije: 1) clearfif; 2) clear:both u block elementu ispod floatanih (npr. dodas br sa clear both); 3) overflow:auto za parent element!  clearfix za gallery, nešto bolje rješenje od običnog clear:both ; clear:both can be applied to any block-level element */
+body > main > div.container > h2 > a {color:yellow;}
 
 /* Embeded video */
 #video {text-align: center;}
@@ -80,15 +83,6 @@ body > main > section > article > h3{  margin: 11px 0 17px 0;
 main .articles a {color:yellow; }
 main .articles .prvi img, main .articles .treci img {width:120px; height: 120px; float:right; border-radius:50%; shape-outside: ellipse(); border: 2px dashed red; margin-left:5px;}	 
 main .articles .drugi img, main .articles .cetvrti img {width:120px; height: 120px; float:left; border-radius:50%; shape-outside: ellipse(); border: 2px dashed red; margin-right: 5px;}
-
-/* GALLERY */
-.gallery {}
-.gallery::after { content: ""; display: table; clear: both;} /* opcije: 1) clearfif; 2) clear:both u block elementu ispod floatanih (npr. dodas br sa clear both); 3) overflow:auto za parent element!  clearfix za gallery, nešto bolje rješenje od običnog clear:both ; clear:both can be applied to any block-level element */
-.gallery > h1 {margin-left:20px; color: white;}
-.gallery article {display:inline-block; border:2px solid yellow; margin:6px; max-width:271px; }
-.gallery article img {max-width: 100%; transition: all .7s linear;cursor: pointer;}
-.gallery article img:hover {transform: scale(1.5);}
-body > main > div.container > h2 > a {color:yellow;}
 
 /*  Floatbox 
 /* opcije: 1) clearfif; 2) clear:both u block elementu ispod floatanih (npr. dodas br sa clear both); 3) overflow:auto za parent element!  clearfix za gallery, nešto bolje rješenje od običnog clear:both ; clear:both can be applied to any block-level element!
@@ -130,10 +124,12 @@ body > footer > p:nth-child(4) a {color:yellow; }
 
 
 /* GALERIJA - preuzeto sa https://codepen.io/phileflanagan/pen/QgPdwz, prilagođeno*/
+body > main > div.container > h2 > a {color:yellow;} /* TOP u galeriji*/
+
 .container {
 	margin: 0 auto;
-    max-width: 800px;
-    max-height: 100vh;
+    width: 98%;
+    min-width: 98%;  
     background-color: transparent;
     margin-top: 50px;
     border: 2px solid white;
@@ -149,9 +145,7 @@ body > footer > p:nth-child(4) a {color:yellow; }
 	transform: translate(-50%, -50%);
 }
 
-.transition {
-	transition: all 350ms ease-in-out;
-}
+.transition {transition: all 350ms ease-in-out;}
 
 .r-3-2 {
 	width: 100%;
@@ -189,7 +183,7 @@ body > footer > p:nth-child(4) a {color:yellow; }
 .gallery-item.active { opacity: 1; }
 
 .controls {
-	display: none;
+	display: none; 
 	font-size: 0;
 	border-top: none;
 }
