@@ -210,7 +210,7 @@ body > footer > p:nth-child(4) a {color:yellow; }
 /**** MEDIAQUERIES ****/
 
 /*Mediaquery za menu*/
-@media screen and (max-width: 389px) {
+@media screen and (max-width: 386px) {
     #pomocna { margin-bottom:140px;}
     }
 
