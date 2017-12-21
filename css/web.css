@@ -107,7 +107,7 @@ body > main > section.floatBox > article > a > img:hover {transform: scale(1.1);
 #mapa {margin-top: 50px; border-top:3px solid white; overflow: hidden;}
 #mapa h2 {color:lime; font-size: 1.3em; text-align: center;}
 #mapa > h2 > a {color:yellow;}
-#mapa .mapa img { max-width: 100%; display:block; margin:0 auto; border:2px solid lime;border-radius: 10px; }
+#mapa .mapa img { max-width: 99%; display:block; margin:0 auto; border:2px solid lime;border-radius: 10px; }
 
 /*ASIDE*/
 .pquote {	float:left; max-width: 400px; color: lime;	font-size: 1.5em; line-height: 0.9;	padding: 5px;
