@@ -12,8 +12,7 @@ body {
 	max-width: 800px;
 	margin: 0 auto;
 	background-color: black;
-	box-sizing: border-box;
-	
+	box-sizing: border-box;	
 }
 
 header {
@@ -79,7 +78,6 @@ body > main > section > article > h3{  margin: 11px 0 17px 0;
   color: #f1ebe5;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
   letter-spacing: -4px; }
-
 main .articles a {color:yellow; }
 main .articles .prvi img, main .articles .treci img {width:120px; height: 120px; float:right; border-radius:50%; shape-outside: ellipse(); border: 2px dashed red; margin-left:5px;}	 
 main .articles .drugi img, main .articles .cetvrti img {width:120px; height: 120px; float:left; border-radius:50%; shape-outside: ellipse(); border: 2px dashed red; margin-right: 5px;}
@@ -199,7 +197,6 @@ body > main > div.container > h2 > a {color:yellow;} /* TOP u galeriji*/
 .move-btn.left  { cursor: w-resize; }
 .move-btn.right { cursor: e-resize; }
 /* KRAJ GALERIJE*/
-
 
 /**** MEDIAQUERIES ****/
 
