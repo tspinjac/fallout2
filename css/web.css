@@ -201,12 +201,12 @@ body > main > div.container > h2 > a {color:yellow;} /* TOP u galeriji*/
 /**** MEDIAQUERIES ****/
 
 /*Mediaquery za menu*/
-@media screen and (max-width: 386px) {
+@media (max-width: 386px) {
     #pomocna { margin-bottom:140px;}
     }
 
 /* Media za floatbox..<580px:    float:none;*/
-@media screen and (max-width: 580px){
+@media (min-width: 387px) and (max-width: 767px){
   	.floatBox article {float:none; text-align: center; height:300px; font-size:1.3em; width:calc(100% - 14px); border:2px solid white; min-height: 150px;}
 	.floatBox article p { font-size: 1.2em; color: lime; margin-top:-10px;}
 }
