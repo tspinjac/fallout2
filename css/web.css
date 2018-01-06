@@ -199,7 +199,6 @@ body > main > div.container > h2 > a {color:yellow;} /* TOP u galeriji*/
 /* KRAJ GALERIJE*/
 
 /**** MEDIAQUERIES ****/
-
 /*Mediaquery za menu*/
 @media (max-width: 386px) {
     #pomocna { margin-bottom:140px;}
