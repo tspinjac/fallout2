@@ -1,2 +1,2 @@
 # fallout2
-Fallout 2 tribute page
+:+1: Fallout 2 tribute page
